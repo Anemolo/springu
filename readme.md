@@ -28,8 +28,9 @@ obj.x += changeX;
 ### **No callbacks for when updating or completing.**
  While this makes it so you have to do that manually. It makes checking when multiple springs are done easier to think about and do. Without the need for a super complex API.
   
-#### **Meh API**: callbacks + automatic setting the value
+#### **IMAGINARY API**: callbacks + automatic setting the value
 ```javascript
+// THIS ISN'T THE ACTUAL API. JUST TO ILUSTRATE
 import springu from 'springu';
 
 let obj = { x: 0, y: 0 };
@@ -37,12 +38,15 @@ let settings = { spring: 0.8, damping: 0.2,friction: 0.98, snapThreshold: 0.001 
 let isXdone = false;
 let isYdone = false;
 
+// THIS ISN'T THE ACTUAL API. JUST TO ILUSTRATE
 springu(obj, 'x', 1., {...settings, onComplete: () =>{ isXdone = true;  });
 springu(obj, 'y', 1., {...settings, onComplete: () =>{ isYdone = true;  });
 
+// THIS ISN'T THE ACTUAL API. JUST TO ILUSTRATE
 if(isXdone && isYDone){
 	// do something
 }
+// THIS ISN'T THE ACTUAL API. JUST TO ILUSTRATE
 ```
 This feels like I have to go back and forward to understand what's even happening here.
 
