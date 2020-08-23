@@ -1,0 +1,2 @@
+!function(e,n){"object"==typeof exports&&"undefined"!=typeof module?n(exports):"function"==typeof define&&define.amd?define(["exports"],n):n((e=e||self).springu={})}(this,function(e){function n(e,n,t,i){var o=e[n],f=e[n+"Velocity"];null==f&&(f=0);var r=(f*i.damping+(t-o)*i.spring)*i.friction;return Math.abs(r)<i.snapThreshold&&(r=t-o),e[n+"Velocity"]=r,r}e.default=n,e.springu=n});
+//# sourceMappingURL=index.umd.js.map

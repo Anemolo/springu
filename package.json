@@ -1,0 +1,33 @@
+{
+	"name": "springu",
+	"version": "1.0.0",
+	"description": "A teeny-tiny spring utility",
+	"author": "Daniel Velasquez <velasquezdanield@gmail.com> (velasquezdaniel.com)",
+	"license": "ISC",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Anemolo/springu.git"
+	},
+	"bugs": {
+		"url": "https://github.com/Anemolo/springu/issues"
+	},
+	"homepage": "https://github.com/Anemolo/springu",
+	"devDependencies": {
+		"microbundle": "^0.12.3"
+	},
+	"scripts": {
+		"build": "microbundle"
+	},
+	"main": "./dist/index.umd.js",
+	"unpkg": "dist/index.umd.js",
+	"module": "./dist/index.modern.js",
+	"source": "./index.js",
+	"keywords": [
+		"linear",
+		"interpolation",
+		"lerp",
+		"interp",
+		"smoothstep",
+		"mix"
+	]
+}
